@@ -10,10 +10,11 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@Table(name = "STUDENT")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student{
+public class Student {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
